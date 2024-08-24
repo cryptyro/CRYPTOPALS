@@ -1,0 +1,16 @@
+[package]
+name = "set_1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "^0.8"
+lazy_static = "1.4"
+itertools = "0.10.3"
+
+#[profile.release]
+#opt-level = 3        # Maximum optimization level for performance
+#lto = true           # Enable Link Time Optimization
+#codegen-units = 1    # Use a single code generation unit for better optimization
+#panic = "abort"      # Use abort strategy for panics
+#debug = false        # Disable debug information
