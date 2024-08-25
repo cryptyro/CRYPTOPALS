@@ -64,7 +64,7 @@ fn base64_char_to_value(c: char) -> u8 {
     }
 }
 // Converts the Base64 string back to a byte vector by accumulating bits into a buffer and extracting bytes when there are enough bits
-fn decode_base64(input: &str) -> Vec<u8> {
+pub fn decode_base64(input: &str) -> Vec<u8> {
     let mut bytes = Vec::new();
     let mut buffer = 0u32;
     let mut bits_in_buffer = 0;

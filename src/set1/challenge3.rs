@@ -26,7 +26,7 @@ pub fn letter_count(plaintext: String) -> HashMap<char, f32> {
 
 // Declare a static variable to hold the result from the book read
 lazy_static! {
-    pub static ref alphabet_count: HashMap<char, f32> = letter_count(fs::read_to_string("sample.txt").unwrap());
+    pub static ref alphabet_count: HashMap<char, f32> = letter_count(fs::read_to_string("./data/sample.txt").unwrap());
 }
 
 pub fn xor_break(cipher_hex: &[u8]) -> (u8, String, f32) {
