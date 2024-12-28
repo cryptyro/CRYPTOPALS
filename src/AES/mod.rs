@@ -1,3 +1,2 @@
-pub mod encrypt;
-pub mod decrypt;
+pub mod utility;
 pub mod moops;
