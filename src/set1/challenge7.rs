@@ -1,7 +1,7 @@
 use std::fs::{self, File};
 use std::io::Write;
 use crate::set1::challenge1::decode_base64;
-use crate::aes::moops::ecb_decipher;
+use crate::AES::moops::ecb_decipher;
 
 pub fn test7() {
     let mut contents = fs::read_to_string("./data/ecb_decrypt.txt")
