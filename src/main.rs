@@ -29,7 +29,7 @@ use set2::challenge16::test16;
 
 use set3::challenge17::test17;
 use set3::challenge18::test18;
-// use set3::challenge19::test19;
+use set3::challenge19::test19;
 // use set3::challenge20::test20;
 // use set3::challenge21::test21;
 // use set3::challenge22::test22;
@@ -60,5 +60,38 @@ use set3::challenge18::test18;
 
 
 fn main () {
-    test18();
+    test19();
 }
+
+/*use std::collections::HashMap;
+use std::env;
+
+mod module1;
+mod module2;
+
+fn main() {
+    // Create a function registry
+    let mut function_map: HashMap<&str, fn()> = HashMap::new();
+
+    // Register functions
+    function_map.insert("hello", module1::hello);
+    function_map.insert("greet", module1::greet);
+    function_map.insert("bye", module2::bye);
+
+    // Get function name from CLI args
+    let args: Vec<String> = env::args().collect();
+    if args.len() < 2 {
+        eprintln!("Usage: {} <function_name>", args[0]);
+        return;
+    }
+
+    let function_name = args[1].as_str();
+
+    // Execute the function if found
+    if let Some(&function) = function_map.get(function_name) {
+        function();
+    } else {
+        eprintln!("Error: Function '{}' not found!", function_name);
+    }
+}
+ */
